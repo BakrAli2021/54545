@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+}
+header .logo{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    flex-basis: 30%;
+    justify-content: space-between;
+}header ul li{
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 1s;
+}header ul li:first-of-type,
+header ul li:hover{
+background-color: white;
+border-radius: 10px;
+color:#2b1055 ;
+}
+section{
+   
+    position: relative;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+}section img#mountains_front{
+    z-index: 10;
+}
+section img#moon{
+    mix-blend-mode: lighten;
+}
+#txt{
+color: white;
+font-size:7.5vw;
+position: absolute;
+white-space: nowrap;
+right: -350px;
+z-index: 9;
+}
+#btn{
+    text-decoration: none;
+    color: #2b1055;
+    background-color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 2em;
+    transform: translateY(150px);
+    z-index: 9;
+    margin-left: 200px;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background-color: #1c0522;
+    color: white;
+}
